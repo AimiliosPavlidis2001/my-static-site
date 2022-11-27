@@ -1,0 +1,14 @@
+#!/bin/sh
+
+
+pandoc -s README.md -o index.html --template my_template.html
+
+pandoc -s Read/README.md -o Read/index.html --template my_template.html
+
+pandoc -s Currently-Reading/README.md -o Currently-Reading/index.html --template my_template.html
+
+pandoc -s To-Read/README.md -o To-Read/index.html --template my_template.html
+
+pandoc -s Dropped/README.md -o Dropped/index.html --template my_template.html
+
+pandoc -s On-Hold/README.md -o On-Hold/index.html --template my_template.html
